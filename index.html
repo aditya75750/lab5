@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My College - Official Portal</title>
+    <style>
+        body {
+            /* (b) Background image using random image link */
+            background-image: url('https://picsum.photos/1600/900?random=10');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.93);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* (c) College Name in large text, Address in smaller size */
+        .college-header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .college-name {
+            font-size: 34px;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin: 0;
+        }
+
+        .college-address {
+            font-size: 15px;
+            color: #555555;
+            margin-top: 8px;
+        }
+
+        /* (e) Scrolling text with upcoming exam dates & events */
+        marquee {
+            background-color: #fffbeb;
+            color: #b45309;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 15px;
+            border: 1px solid #fde68a;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+
+        /* (d) Names of courses offered: each in different color, style, and typeface */
+        .courses-section h3 {
+            font-size: 22px;
+            color: #111827;
+            margin-bottom: 15px;
+        }
+
+        .courses-list {
+            list-style-type: square;
+            padding-left: 30px;
+            line-height: 2.2;
+        }
+
+        /* Course 1: Arial, blue, italic */
+        .course-1 {
+            color: #2563eb;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* Course 2: Times New Roman, red, bold */
+        .course-2 {
+            color: #dc2626;
+            font-family: 'Times New Roman', serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+
+        /* Course 3: Courier New, green, oblique */
+        .course-3 {
+            color: #16a34a;
+            font-family: 'Courier New', monospace;
+            font-style: oblique;
+            font-size: 17px;
+        }
+
+        /* Course 4: Georgia, purple, bold italic */
+        .course-4 {
+            color: #9333ea;
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Course 5: Trebuchet MS, orange, underlined */
+        .course-5 {
+            color: #ea580c;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-style: normal;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- (c) College name at top in large text, followed by address in smaller size -->
+        <div class="college-header">
+            <h1 class="college-name">St. Xavier's Institute of Engineering & Technology</h1>
+            <p class="college-address">124 Knowledge Campus, University Road, Bangalore - 560001</p>
+        </div>
+
+        <!-- (e) Scrolling text with upcoming exam dates, events, etc. -->
+        <marquee behavior="scroll" direction="left">
+            📢 Upcoming Events: Mid-Semester Exams start on November 15, 2026 | Annual Tech Fest on December 5, 2026 | Last date for exam form submission is October 25, 2026
+        </marquee>
+
+        <!-- (d) Courses offered: each in different color, style, and typeface -->
+        <div class="courses-section">
+            <h3>Courses Offered</h3>
+            <ul class="courses-list">
+                <li class="course-1">B.Tech in Computer Science & Engineering</li>
+                <li class="course-2">B.Tech in Electronics & Communication Engineering</li>
+                <li class="course-3">Bachelor of Computer Applications (BCA)</li>
+                <li class="course-4">Master of Business Administration (MBA)</li>
+                <li class="course-5">M.Tech in Artificial Intelligence & Data Science</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
